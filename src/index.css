@@ -1,0 +1,28 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap');*/
+@import '@diplodoc/transform/dist/css/yfm.css';
+@import '@gravity-ui/uikit/styles/fonts.css';
+@import '@gravity-ui/uikit/styles/styles.css';
+@import './styles.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;                               /* обнуляем отступы и убираем бордюры */
+  vertical-align: baseline;          /* приводим все к одной базовой линии */
+  background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+  text-decoration:none;
+}
+:root {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+

@@ -1,0 +1,5 @@
+export const ADMIN = "ROLE_ADMIN";
+export const NEWS_UPDATE = "ROLE_NEWS_UPDATE";
+export const USER_UPDATE = "ROLE_USER_UPDATE";
+export const COURSE_UPDATE = "ROLE_COURSE_UPDATE";
+export const GROUP_UPDATE = "ROLE_GROUP_UPDATE";

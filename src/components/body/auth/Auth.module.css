@@ -1,0 +1,83 @@
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth {
+    width: 350px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.button {
+    text-align: center;
+}
+
+.buttonAuth {
+    background: #ffffff;
+    padding: 3px 20px 4px 20px;
+    border-radius: 1px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(108,145,201);
+    transition: 0.5s all;
+    height: 25px;
+    border-radius: 5px;
+}
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.buttonAuth:hover {
+    background: rgb(108,145,201);
+    color: white;
+}
+
+.blockInput {
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+
+
+.input {
+    border-bottom: 0.1px solid rgb(108,145,201);
+    width: 100%;
+    font-size: 12px;
+    padding: 5px 2px;
+    color: #424242;
+    transition: background-color 1s ease-in-out;
+}
+
+.input:focus {
+    background: rgba(0, 153, 174, 0.1);
+}
+.info {
+    color: #ff6363;
+    text-align: center;
+    font-size: 13px;
+}

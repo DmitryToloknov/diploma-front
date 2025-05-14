@@ -1,0 +1,4 @@
+.buttonDelete {
+    --g-button-background-color: rgb(232, 73, 69);
+    --g-button-background-color-hover: rgb(232, 73, 69);
+}

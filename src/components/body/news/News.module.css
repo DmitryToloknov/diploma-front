@@ -1,0 +1,63 @@
+.news {
+    width: 75%;
+    margin: auto;
+}
+.newsHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.admin {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30px;
+}
+.adminMenu{
+    display: flex;
+    justify-content: right;
+}
+.createNews{
+    width: 160px;
+    height: 28px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.checkbox{
+    height: 28px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.name{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.autor{
+    text-align: right;
+}
+.newsElem{
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto auto 20px;
+}
+.hr{
+    background: rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.user{
+    margin-right: 5px;
+}
+.buttonReadNews{
+    text-align: right;
+    margin-top: 10px;
+}
+.findNews{
+    margin-bottom: 10px;
+    text-align: center;
+}

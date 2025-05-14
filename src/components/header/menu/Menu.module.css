@@ -1,0 +1,21 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.elementMenu {
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #222222;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.elementMenu:hover {
+    background-color: rgb(108,145,201);
+    color: #fff;
+    transition: all 0.4s;
+}

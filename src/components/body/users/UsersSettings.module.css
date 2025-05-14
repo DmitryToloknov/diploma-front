@@ -1,0 +1,49 @@
+.loader {
+    text-align: center;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.filter {
+    margin-bottom: 10px;
+}
+.filters {
+    width: 35%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.filterCheckbox{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.usersTable{
+    margin-top: 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialogCreateUser{
+    width: 500px;
+}

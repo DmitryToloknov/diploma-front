@@ -1,0 +1,26 @@
+.name{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.autor{
+    text-align: right;
+}
+.body{
+    width: 70%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto auto 20px;
+}
+.hr{
+    background: rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.user{
+    margin-right: 5px;
+}

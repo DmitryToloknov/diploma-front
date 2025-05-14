@@ -1,0 +1,105 @@
+.description {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.body {
+    width: 70%;
+}
+
+.historys {
+    width: 25%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.history {
+    margin-top: 10px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.history:hover {
+    transition: 0.1s all;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.status {
+    margin-top: 3px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.editor {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.code {
+    margin-top: 10px;
+}
+
+.codeButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.historyElem {
+    width: 600px;
+    padding: 30px;
+}
+
+.historyHeader {
+    text-align: center;
+}
+
+.codeModal {
+    margin-top: 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.case {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.inInfo, .outInfo{
+    width: 100%;
+}
+
+.notHistory{
+    text-align: center;
+}
+
+.reasonRejection{
+    margin-top: 20px;
+}

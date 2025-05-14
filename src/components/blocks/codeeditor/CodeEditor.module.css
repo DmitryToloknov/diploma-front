@@ -1,0 +1,7 @@
+.language{
+    margin-bottom: 10px;
+}
+:global(.monaco-editor) {
+    outline: none !important;
+    border: none !important;
+}

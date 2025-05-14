@@ -1,0 +1,40 @@
+.overlay {
+    position: fixed;
+    bottom: 10px; /* Позиция снизу */
+    right: 10px; /* Позиция справа */
+    width: auto;
+    max-width: 500px; /* Ограничение ширины */
+    height: auto;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideIn {
+    animation: slideIn 0.5s ease-out forwards; /* Анимация появления */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%); /* Начало анимации - ниже экрана */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0); /* Конечная позиция - на экране */
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    animation: fadeOut 1s ease-out forwards; /* Анимация исчезновения */
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

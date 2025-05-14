@@ -1,0 +1,50 @@
+.loader{
+    text-align: center;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10px;
+    align-items: flex-start;
+}
+.center{
+    width: 70%;
+}
+.description{
+    padding: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    min-height: 300px;
+}
+.right{
+    width: 25%;
+    position: sticky;
+    top: 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+.name{
+    width: 70%;
+}
+.settingElement{
+    margin-top: 10px;
+}
+
+.buttonSetting{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.tasksHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks{
+    margin-top: 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}

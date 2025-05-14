@@ -1,0 +1,151 @@
+.loader {
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+.center {
+    width: 70%;
+}
+
+.right {
+    width: 25%;
+    padding: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.estimationInfo {
+    margin-top: 5px;
+}
+
+.tasks {
+    padding: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 17px;
+    padding: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.leftInfo {
+    display: flex;
+    gap: 20px;
+}
+
+.notTask {
+    text-align: center;
+}
+
+
+.skeleton {
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    height: 700px;
+    width: 1000px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalBody {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.attemptInfo {
+    width: 60%;
+    height: 680px;
+    padding: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.historys {
+    width: 35%;
+    height: 680px;
+    padding: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.history {
+    margin-top: 10px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.history:hover {
+    transition: 0.1s all;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.status {
+    margin-top: 3px;
+}
+
+.codeModal {
+    margin-top: 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.case {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.inInfo, .outInfo {
+    width: 100%;
+}
+
+.review {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.buttonDelete {
+    --g-button-background-color: rgb(232, 73, 69);
+    --g-button-background-color-hover: rgb(232, 73, 69);
+}
+.estimationActual{
+    margin-bottom: 10px;
+}

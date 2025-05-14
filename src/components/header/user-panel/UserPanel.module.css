@@ -1,0 +1,32 @@
+.userBlock{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+
+    cursor: pointer;
+    color: #222222;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.name{
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+
+    height: 30px;
+}
+.auth{
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    height: 30px;
+}
+.auth:hover, .name:hover {
+    background-color: rgb(108,145,201);
+    color: #fff;
+    transition: all 0.4s;
+}

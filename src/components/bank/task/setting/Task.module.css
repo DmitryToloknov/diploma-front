@@ -1,0 +1,87 @@
+.taskInfo{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.setting{
+    width: 25%;
+    position: sticky;
+    top: 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+.body{
+    width: 70%;
+}
+.description{
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 300px;
+}
+.editor{
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.buttonSetting{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.name{
+    width: 70%;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+.settingElement{
+    margin-top: 10px;
+}
+
+.unit{
+    margin-right: 5px;
+}
+.subHeader{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.testCases{
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.case {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+
+.caseColumns{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.caseColumn{
+   width: 48%;
+}
+.inInfo, .outInfo{
+    width: 100%;
+}

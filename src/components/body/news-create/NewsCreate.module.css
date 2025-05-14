@@ -1,0 +1,49 @@
+.body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto auto 20px;
+}
+.editorNews {
+    width: 70%;
+}
+.newName{
+    margin-bottom: 10px;
+}
+.settingsNews{
+    width: 20%;
+    position: sticky;
+    top: 20px; /* Фиксируем от верха родителя */
+    /*align-self: start;*/
+
+}
+
+.buttonsSettings {
+    display: flex;
+    gap: 4%;
+    margin-bottom: 10px;
+}
+.infoNews{
+    margin-bottom: 10px;
+}
+
+.autor{
+    text-align: right;
+    margin-bottom: 3px;
+}
+
+.button{
+    color: white;
+}
+
+.settingsNews, .editorNews{
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.inputName:focus{
+    background: rgba(0, 153, 174, 0.1);
+}
+
