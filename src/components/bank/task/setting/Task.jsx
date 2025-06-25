@@ -66,7 +66,7 @@ export default function Task() {
     const {deleteTestCase, isLoadingDeleteTestCase} = useDeleteTestCase();
     const [openUpdateTestCaseDialog, setOpenUpdateTestCaseDialog] = useState(false);
     const {getTestCase, testCase, setTestCase} = useGetTestCase();
-    const {startTask, isLoadingStartTask} =useStartTask();
+    const {startTask, isLoadingStartTask} = useStartTask();
 
     const uploadImage = async (file) => {
         const formData = new FormData();
@@ -95,7 +95,7 @@ export default function Task() {
         allowHTML: true,
         fileUploadHandler: uploadImage,
     });
-    useEffect( () => {
+    useEffect(() => {
         if (accessToken !== null) {
             accessTokenRef.current = accessToken;
             if (!isLoaded) {
@@ -125,7 +125,7 @@ export default function Task() {
     return (
         <div>
             <div className={classes.name}>
-                <TextInputBig value={task.name} onUpdate={(i) => setTask((task) => ({...task, name:i}))}/>
+                <TextInputBig value={task.name} onUpdate={(i) => setTask((task) => ({...task, name: i}))}/>
             </div>
             <div className={classes.taskInfo}>
                 <div className={classes.body}>
@@ -175,10 +175,10 @@ export default function Task() {
                         {testCases?.map(testCase => (
                             <div className={classes.case} key={testCase.id}>
                                 <div className={classes.inInfo}
-                                    onClick={async () => {
-                                        await getTestCase(accessTokenRef.current, showAlert, testCase.id);
-                                        setOpenUpdateTestCaseDialog(true);
-                                    }}
+                                     onClick={async () => {
+                                         await getTestCase(accessTokenRef.current, showAlert, testCase.id);
+                                         setOpenUpdateTestCaseDialog(true);
+                                     }}
                                 >
                                     <TextArea minRows={3} readOnly={true}
                                               maxRows={6}
@@ -208,7 +208,7 @@ export default function Task() {
                         size={"m"}
                         min={1}
                         value={task.estimation}
-                        onUpdate={(i) => setTask((task) => ({...task, estimation:i}))}
+                        onUpdate={(i) => setTask((task) => ({...task, estimation: i}))}
                     />
                     <NumberInput
                         className={classes.settingElement}
@@ -217,7 +217,7 @@ export default function Task() {
                         min={1}
                         endContent={<span className={classes.unit}>ms</span>}
                         value={task.timeLimit}
-                        onUpdate={(i) => setTask((task) => ({...task, timeLimit:i}))}
+                        onUpdate={(i) => setTask((task) => ({...task, timeLimit: i}))}
                     />
                     <NumberInput
                         className={classes.settingElement}
@@ -226,7 +226,7 @@ export default function Task() {
                         min={1}
                         endContent={<span className={classes.unit}>MB</span>}
                         value={task.memoryLimit}
-                        onUpdate={(i) => setTask((task) => ({...task, memoryLimit:i}))}
+                        onUpdate={(i) => setTask((task) => ({...task, memoryLimit: i}))}
                     />
                     <div className={`${classes.skills} ${classes.settingElement}`}>
                         <Select
@@ -238,7 +238,7 @@ export default function Task() {
                             filterable={true}
                             multiple={true}
                             value={task.skills}
-                            onUpdate={(i) => setTask((task) => ({...task, skills:i}))}
+                            onUpdate={(i) => setTask((task) => ({...task, skills: i}))}
 
                         >
                             {skills?.map(skill => (
@@ -261,7 +261,7 @@ export default function Task() {
                             loading={isLoadingUpdateTask}
                             onClick={() => {
                                 const updatedDescription = editor.getValue();
-                                const updatedTask = { ...task, description: updatedDescription };
+                                const updatedTask = {...task, description: updatedDescription};
 
                                 setTask(updatedTask); // Обновляем состояние
                                 updateTask(accessTokenRef.current, showAlert, updatedTask);
@@ -274,7 +274,7 @@ export default function Task() {
                         width={"max"}
                         loading={isLoadingStartTask}
                         onClick={() => {
-                            startTask(accessTokenRef.current, showAlert,  id);
+                            startTask(accessTokenRef.current, showAlert, id);
                         }}>
                         Запустить кейсы
                     </Button>

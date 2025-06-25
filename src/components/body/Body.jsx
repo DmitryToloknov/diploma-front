@@ -12,6 +12,7 @@ import Task from "../bank/task/setting/Task.jsx";
 import CourseTask from "./course/task/CourseTask.jsx";
 import CourseMenu from "./course/menu/CourseMenu.jsx";
 import CourseStatistics from "./course/statistics/CourseStatistics.jsx";
+import User from "./user/User.jsx";
 
 export default function Body({}) {
 
@@ -31,7 +32,7 @@ export default function Body({}) {
                 <Route path="/course/:id" element=<CourseMenu/> />
                 <Route path="/task/:id" element=<Task/> />
                 <Route path="/bank-tasks" element=<BankTasks/> />
-                <Route path="/my" element={"Мой кабинет"}/>
+                <Route path="/my" element=<User/>/>
                 <Route path="/users/setting" element=<UsersSettings />/>
             </Routes>
         </div>

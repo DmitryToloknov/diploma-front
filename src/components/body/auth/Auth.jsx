@@ -38,11 +38,12 @@ export default function Auth() {
                 credentials: 'include',
                 body: JSON.stringify({login, password})
             });
-            const data = await response.json();
+
             if (!response.ok) {
-                setErrorMessage(data);
+                setErrorMessage(await response.text());
                 return;
             }
+            const data = await response.json();
             setAuth(true);
             setToken(data.accessToken);
             setRefresh(true);

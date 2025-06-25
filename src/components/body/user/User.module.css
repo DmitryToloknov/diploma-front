@@ -1,0 +1,16 @@
+.content_35_65 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns:
+      calc(35% - 15px)   /* вычитаем половину gap */
+      calc(65% - 15px);  /* вычитаем вторую половину gap */
+    gap: 30px; /* отступы между элементами */
+}
+
+.content_100 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 100%; /* 2 равных колонки */
+}
