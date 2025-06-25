@@ -1,4 +1,5 @@
 //URL
+// export const SERVER_URL = 'http://localhost:8082/';
 export const SERVER_URL = 'http://api.toloknov-prod.ru/';
 export const COURSES = "/courses"
 export const COURSE = "/course"
