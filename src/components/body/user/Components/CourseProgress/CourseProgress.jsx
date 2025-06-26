@@ -18,7 +18,7 @@ function getProgressColor(percent) {
 export default function CourseProgress({name, id, estimation, estimationActual}) {
     const navigate = useNavigate();
     const percent = estimation && estimation !== 0
-        ? (estimationActual / estimation) * 100
+        ? Math.round((estimationActual / estimation) * 100)
         : 0;
 
     return (
