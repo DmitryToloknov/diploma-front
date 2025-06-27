@@ -113,6 +113,10 @@
     background: rgba(0, 0, 0, 0.05);
 }
 
+.notHistory{
+    text-align: center;
+}
+
 .status {
     margin-top: 3px;
 }
