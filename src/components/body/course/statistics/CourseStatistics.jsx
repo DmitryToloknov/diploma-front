@@ -7,7 +7,19 @@ import {COURSE_UPDATE} from "../../../../utils/Roles.js";
 import NeedAuth from "../../../../utils/Auth/NeedAuth.jsx";
 import NoAccess from "../../../../utils/Accses/NoAccess.jsx";
 import classes from "./CourseStatistics.module.css";
-import {Button, Dialog, Icon, Label, Loader, Modal, Select, Skeleton, Text, TextArea} from "@gravity-ui/uikit";
+import {
+    Breadcrumbs,
+    Button,
+    Dialog, FirstDisplayedItemsCount,
+    Icon,
+    Label, LastDisplayedItemsCount,
+    Loader,
+    Modal,
+    Select,
+    Skeleton,
+    Text,
+    TextArea
+} from "@gravity-ui/uikit";
 import {useGetGroups} from "../hook/GetGroups.jsx";
 import {useGetUsersByGroup} from "../hook/GetUsersByGroup.jsx";
 import {useGetTaskInfoForStatistics} from "../hook/GetTaskInfoForStatistics.jsx";
@@ -95,8 +107,18 @@ export default function CourseStatistics() {
             <Loader/>
         </div>
     }
+
+    const items = [
+        { text: 'Курс', action: () => navigate(`/course/${id}`),},
+        { text: 'Статистика курса' },
+    ];
     return (
         <div>
+            <Breadcrumbs
+                items={items}
+                firstDisplayedItemsCount={FirstDisplayedItemsCount.One}
+                lastDisplayedItemsCount={LastDisplayedItemsCount.Two}
+            />
             <div className={classes.filters}>
                 <Select
                     className={classes.settingElement}

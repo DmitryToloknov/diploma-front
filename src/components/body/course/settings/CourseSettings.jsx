@@ -3,7 +3,18 @@ import React, {useCallback, useEffect, useMemo, useRef, useState} from "react";
 import {COURSE_UPDATE} from "../../../../utils/Roles.js";
 import NeedAuth from "../../../../utils/Auth/NeedAuth.jsx";
 import NoAccess from "../../../../utils/Accses/NoAccess.jsx";
-import {Button, Icon, Loader, Select, Switch, Table, Text, UserLabel, withTableActions} from "@gravity-ui/uikit";
+import {
+    Breadcrumbs,
+    Button, FirstDisplayedItemsCount,
+    Icon, LastDisplayedItemsCount,
+    Loader,
+    Select,
+    Switch,
+    Table,
+    Text,
+    UserLabel,
+    withTableActions
+} from "@gravity-ui/uikit";
 import {changeTitle} from "../../../../utils/Title.jsx";
 import {useAuth} from "../../../auth-context/AuthProvider.jsx";
 import {useCustomAlert} from "../../../blocks/alert/info/useCustomAlert.js";
@@ -128,9 +139,17 @@ export default function CourseSettings() {
             <Loader/>
         </div>
     }
-
+    const items = [
+        { text: 'Курс', action: () => navigate(`/course/${id}`),},
+        { text: 'Настройка курса' },
+    ];
     return (
         <div>
+            <Breadcrumbs
+                items={items}
+                firstDisplayedItemsCount={FirstDisplayedItemsCount.One}
+                lastDisplayedItemsCount={LastDisplayedItemsCount.Two}
+            />
             <div className={classes.name}>
                 <TextInputBig
                     placeholder={"Название курса"}
