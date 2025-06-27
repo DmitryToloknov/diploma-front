@@ -1,11 +1,23 @@
 import {changeTitle} from "../../../../utils/Title.jsx";
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import {useAuth} from "../../../auth-context/AuthProvider.jsx";
 import {useCustomAlert} from "../../../blocks/alert/info/useCustomAlert.js";
 import React, {useEffect, useRef, useState} from "react";
 import NeedAuth from "../../../../utils/Auth/NeedAuth.jsx";
 import classes from "./CourseTask.module.css";
-import {Button, Icon, Label, Loader, Modal, Select, Text, TextArea} from "@gravity-ui/uikit";
+import {
+    Breadcrumbs,
+    Button,
+    FirstDisplayedItemsCount,
+    Icon,
+    Label,
+    LastDisplayedItemsCount,
+    Loader,
+    Modal,
+    Select,
+    Text,
+    TextArea
+} from "@gravity-ui/uikit";
 import {useGetTaskInfo} from "../hook/GetTaskInfo.jsx";
 import CustomAlert from "../../../blocks/alert/info/CustomAlert.jsx";
 import {MarkdownPreview} from "../../../blocks/markdownPreview/MarkdownPreview.jsx";
@@ -27,8 +39,9 @@ export const statusThemeMap = {
 
 export default function CourseTask() {
     const {id, taskId} = useParams();
+    const navigate = useNavigate();
     changeTitle("Задание #" + taskId)
-    const {accessToken, checkRoles, isWasRefreshed, isAuth} = useAuth();
+    const {accessToken, isWasRefreshed, isAuth} = useAuth();
     const {alertData, showAlert, closeAlert} = useCustomAlert();
     const [isLoaded, setIsLoaded] = useState(false);
     const accessTokenRef = useRef(accessToken);
@@ -37,7 +50,7 @@ export default function CourseTask() {
     const [code, setCode] = useState("");
     const {getTaskInfo, task} = useGetTaskInfo();
 
-    const {createAttempt, isLoadingCreateAttempt} = useCreateAttempt();
+    const {createAttempt} = useCreateAttempt();
     const {getAttempts, attempts} = useGetAttempts();
     const {getAttempt, attempt} = useGetAttempt();
     const [openModalAttempt, setOpenModalAttempt] = useState(false);
@@ -64,8 +77,17 @@ export default function CourseTask() {
         </div>
     }
 
+    const items = [
+        { text: 'Курс', action: () => navigate(`/course/${id}`),},
+        { text: 'Задача' },
+    ];
     return (
         <div>
+            <Breadcrumbs
+                items={items}
+                firstDisplayedItemsCount={FirstDisplayedItemsCount.One}
+                lastDisplayedItemsCount={LastDisplayedItemsCount.Two}
+            />
             <div className={classes.name}>
                 {task.name}
             </div>
